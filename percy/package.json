@@ -1,9 +1,12 @@
 {
   "scripts": {
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "test": "percy exec -- cypress run"
   },
   "dependencies": {
-    "@percy/cypress": "^2.3.0",
     "cypress": "^4.0.1"
+  },
+  "devDependencies": {
+    "@percy/cypress": "^2.3.0"
   }
 }

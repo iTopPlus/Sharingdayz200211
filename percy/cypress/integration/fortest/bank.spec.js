@@ -2,8 +2,8 @@ describe('summit', () => {
     it('test krub', ()=> {
         cy.server();
         cy.visit('http://localhost:3000/');
-        cy.percySnapshot();
+        cy.percySnapshot("before");
         cy.clickSi();
-        cy.percySnapshot();
+        cy.percySnapshot("after");
     })
 });
